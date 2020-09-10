@@ -175,6 +175,7 @@ const setup_project = async (
 };
 
 const cli = () => {
+  console.log(__dirname);
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,

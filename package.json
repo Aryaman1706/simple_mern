@@ -4,6 +4,7 @@
   "description": "A npm package to quickly setup a MERN app.",
   "main": "app.js",
   "scripts": {
+    "dev": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "https://github.com/Aryaman1706/simply_mern#readme",
