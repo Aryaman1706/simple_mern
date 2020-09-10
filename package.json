@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/Aryaman1706/SimplyMERN",
+  "homepage": "https://github.com/Aryaman1706/simply_mern#readme",
   "keywords": [
     "nodejs",
     "MERN",
@@ -14,5 +14,9 @@
   ],
   "author": "Aryaman Grover <1761ary@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aryaman1706/simply_mern.git"
+  },
   "dependencies": {}
 }
