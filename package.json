@@ -1,15 +1,18 @@
 {
-  "name": "SimplyMERN",
+  "name": "simply_mern",
   "version": "1.0.0",
-  "description": "",
+  "description": "A npm package to quickly setup a MERN app.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "prettier": "^2.1.1"
-  }
+  "homepage": "https://github.com/Aryaman1706/SimplyMERN",
+  "keywords": [
+    "nodejs",
+    "MERN",
+    "Setup"
+  ],
+  "author": "Aryaman Grover <1761ary@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
 }
