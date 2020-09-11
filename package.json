@@ -1,6 +1,6 @@
 {
   "name": "simple_mern",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A npm package to quickly setup a MERN app.",
   "main": "app.js",
   "bin": "app.js",
@@ -20,6 +20,8 @@
     "type": "git",
     "url": "https://github.com/Aryaman1706/simple_mern.git"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {}
 }
