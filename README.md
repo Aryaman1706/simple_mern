@@ -1,1 +1,1 @@
-# SimplyMERN
+# simple_mern
