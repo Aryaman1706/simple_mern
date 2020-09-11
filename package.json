@@ -1,6 +1,6 @@
 {
   "name": "simple_mern",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A npm package to quickly setup a MERN app.",
   "main": "app.js",
   "bin": "app.js",
