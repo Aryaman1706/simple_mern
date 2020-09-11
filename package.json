@@ -1,13 +1,13 @@
 {
   "name": "simple_mern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A npm package to quickly setup a MERN app.",
   "main": "app.js",
   "bin": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/Aryaman1706/simply_mern#readme",
+  "homepage": "https://github.com/Aryaman1706/simple_mern#readme",
   "keywords": [
     "nodejs",
     "utilities",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aryaman1706/simply_mern.git"
+    "url": "https://github.com/Aryaman1706/simple_mern.git"
   },
   "dependencies": {}
 }
