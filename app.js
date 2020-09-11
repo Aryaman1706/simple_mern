@@ -9,7 +9,7 @@ const readline = require("readline");
 
 const makeParentFolder = (parentFolderName) => {
   return new Promise((resolve, reject) => {
-    fs.mkdir(path.resolve(__dirname, `./${parentFolderName}`), (err) => {
+    fs.mkdir(path.resolve(process.cwd(), `./${parentFolderName}`), (err) => {
       if (err) {
         console.log("Process exited -> \n", err);
         reject();
@@ -145,20 +145,20 @@ const setup_project = async (
 ) => {
   await makeParentFolder(parentFolderName);
 
-  process.chdir(parentFolderName);
+  process.chdir(`./${parentFolderName}`);
   console.log(`Switched working directory to ${process.cwd()}`);
 
   makeFolders(rootFolders);
 
   fs.copyFile(
     path.resolve(__dirname, "./default_files/server.js"),
-    path.resolve(__dirname, `./${parentFolderName}/server.js`),
+    path.resolve(process.cwd(), "./server.js"),
     () => console.log("Created server.js in root directory.")
   );
 
   fs.copyFile(
     path.resolve(__dirname, "./default_files/.env"),
-    path.resolve(__dirname, `./${parentFolderName}/.env`),
+    path.resolve(process.cwd(), "./.env"),
     () => console.log("Created .env file.")
   );
 
@@ -168,14 +168,13 @@ const setup_project = async (
     git_work(gitlink);
     fs.copyFile(
       path.resolve(__dirname, "./default_files/.gitignore"),
-      path.resolve(__dirname, `./${parentFolderName}/.gitignore`),
+      path.resolve(process.cwd(), "./.gitignore"),
       () => console.log("Created .gitignore in root directory.")
     );
   }
 };
 
 const cli = () => {
-  console.log(__dirname);
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
