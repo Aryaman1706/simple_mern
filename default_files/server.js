@@ -2,12 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-process.on("uncaughtException", (err) => {
-  console.log("UNCAUGHT EXCEPTION! 💥 Shutting down...");
-  console.log(err.name, err.message);
-  process.exit(1);
-});
-
 const app = express();
 
 app.use(express.json());
@@ -26,10 +20,14 @@ mongoose.connect(process.env.MONGO_URI, {
     console.log("Connected to MongoDB.")
 })
 .catch(error=>{
-    console.log("Connection to MongoDB failed.\nError Message -> \n" 
-                + error
-    );
-})
+    console.log("Connection to MongoDB failed.\nError Message -> \n" + error);
+});
+
+process.on("uncaughtException", (err) => {
+  console.log("UNCAUGHT EXCEPTION! 💥 Shutting down...");
+  console.log(err.name, err.message);
+  process.exit(1);
+});
 
 process.on("unhandledRejection", (err) => {
   console.log("UNHANDLED REJECTION! 💥 Shutting down...");
