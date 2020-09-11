@@ -1,6 +1,6 @@
 # simple_mern
 
-> A basic npm package to quickly setup a MERN application for you.
+**A basic npm package to quickly setup a MERN application for you.**
 [simple-mern](https://www.npmjs.com/package/simple_mern)
 
 ## Get Started
