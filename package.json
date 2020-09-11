@@ -20,8 +20,5 @@
     "type": "git",
     "url": "https://github.com/Aryaman1706/simple_mern.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {}
 }
