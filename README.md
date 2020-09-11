@@ -9,4 +9,8 @@
 * Run `simple_mern`.
 * Answer a few questions or enter through all to setup the project in default configuration.
 
+---
+[Demo Video](https://www.youtube.com/watch?v=4joC_Wrcm3w)
+----
+
 > Feel free to report an issue, generate a pull request and/or drop a suggestion.
